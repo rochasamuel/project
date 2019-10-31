@@ -1,0 +1,274 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    background: #fff;
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  a {
+    color: #007bff;
+    transition: 0.5s;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+
+
+#header {
+    border-top: 4px solid rgb(255, 143, 78);
+    height: 80px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 20px 0;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+  }
+ 
+#header .logo img {
+    padding: 0;
+    margin: 7px 0;
+    max-height: 26px;
+}
+
+.menu{
+    padding: 0;
+    margin: 7px 0;
+}
+
+.menu li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+}
+
+.menu a:hover,
+a:focus,
+a:active{
+    color: rgb(255, 143, 78);
+}
+
+.active { /*para adicionar com java script*/
+    color: rgb(255, 143, 78);
+}
+
+#intro .intro-conteudo {
+    position: absolute;
+    bottom: 0;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+}
+
+.intro-conteudo span{
+    color: rgb(255, 143, 78);
+}
+
+#intro .intro-conteudo .btn-conheca,
+#intro .intro-conteudo .btn-produtos {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+}
+
+#intro .intro-conteudo .btn-conheca {
+  background: #555;
+  border: 2px solid #555;
+}
+
+#intro .intro-conteudo .btn-conheca:hover {
+  background: none;
+  color: #555;
+}
+
+#intro .intro-conteudo .btn-produtos {
+  background: rgb(255, 143, 78);;
+  border: 2px solid rgb(255, 143, 78);;
+}
+
+#intro .intro-conteudo .btn-produtos:hover {
+  background: none;
+  color: rgb(255, 143, 78);;
+}
+
+#intro .intro-conteudo h2 {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+
+.parallax {
+    background-image: url(../img/1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#intro {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*TAGS RESPONMSIVIDADE*/
+  @media (min-width: 992px) {
+    #testimonials .testimonial-item p {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    #header {
+      height: 60px;
+      padding: 10px 0;
+    }
+  
+    #header .logo h1 {
+      font-size: 28px;
+      padding: 8px 0;
+    }
+  
+    #intro {
+      padding: 140px 0 60px 0;
+    }
+
+    #intro .intro-conteudo{
+        top: 60px;
+      }
+  
+    #intro .intro-img {
+      width: 80%;
+      float: none;
+      margin: 0 auto 25px auto;
+    }
+  
+    #intro .intro-info {
+      width: 80%;
+      float: none;
+      margin: auto;
+      text-align: center;
+    }
+  
+    #why-us .card {
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .back-to-top {
+      bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    #intro .intro-info {
+      width: 100%;
+    }
+  
+    #intro .intro-info h2 {
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+  
+    .section-header p {
+      width: 100%;
+    }
+  
+    #testimonials .testimonial-item {
+      text-align: center;
+    }
+  
+    #testimonials .testimonial-item .testimonial-img {
+      float: none;
+      margin: auto;
+    }
+  
+    #testimonials .testimonial-item h3,
+    #testimonials .testimonial-item h4,
+    #testimonials .testimonial-item p {
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 574px) {
+    #intro {
+      padding: 100px 0 20px 0;
+    }
+  }
+
