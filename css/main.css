@@ -72,8 +72,8 @@ a:active{
     color: rgb(255, 143, 78);
 }
 
-.active { /*para adicionar com java script*/
-    color: rgb(255, 143, 78);
+.active{ /*JAVASCRIPT*/
+    color: rgb(255, 143, 78)!important;
 }
 
 #intro .intro-conteudo {
@@ -109,16 +109,17 @@ a:active{
 
 #intro .intro-conteudo .btn-conheca,
 #intro .intro-conteudo .btn-produtos {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 32px;
-  border-radius: 2px;
+  border-radius: 3px;
   transition: 0.5s;
   margin: 10px;
   color: #fff;
+  text-decoration: none;
 }
 
 #intro .intro-conteudo .btn-conheca {
@@ -133,12 +134,12 @@ a:active{
 
 #intro .intro-conteudo .btn-produtos {
   background: rgb(255, 143, 78);;
-  border: 2px solid rgb(255, 143, 78);;
+  border: 2px solid rgb(255, 143, 78);
 }
 
 #intro .intro-conteudo .btn-produtos:hover {
   background: none;
-  color: rgb(255, 143, 78);;
+  color: rgb(255, 143, 78);
 }
 
 #intro .intro-conteudo h2 {
@@ -164,17 +165,43 @@ a:active{
 }
 
 
+#sobre .sobre-img img {
+    margin-left: -15px;
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
 
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
+#sobre {
+    padding: 60px 0 30px 0;
+}
 
+#sobre .conteudo h2 {
+    color: rgb(255, 143, 78);
+    font-weight: 700;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+}
 
-
-
-
-
-
-
-
+#sobre .conteudo h3 {
+    color: #555;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    font-style: italic;
+}
 
 
 
