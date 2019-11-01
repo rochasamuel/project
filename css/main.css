@@ -45,8 +45,8 @@ body {
  
 #header .logo img {
     padding: 0;
-    margin: 7px 0;
-    max-height: 26px;
+    margin: -11% 0;
+    max-height: 80px;
 }
 
 .menu{
