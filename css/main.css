@@ -235,6 +235,28 @@ img {
     padding-bottom: 20px;
 }
 
+.flex{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img-fornecedoras{
+  max-width: min-content;
+  box-shadow: 0px 0px 15px rgba(127, 137, 161, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+
+.img-fornecedoras img {
+  max-width:150px;
+  max-height:75px;
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
+
+
 
 
 
