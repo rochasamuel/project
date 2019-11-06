@@ -343,6 +343,11 @@ h4{
   font-weight: 600;
 }
 
+.vline{
+  border-right: 1px solid #000;
+  padding-right: 3.3em;
+}
+
 .checked{
   display: none;
 }

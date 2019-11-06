@@ -33,6 +33,9 @@ $("#desl-link").click(function (event) {
     setTimeout(function(){
         $('.deslizantes').fadeIn();
     },300);
+    $('.product-card').removeClass("wow bounceInUp");
+    $('.product-card').removeAttr("data-wow-duration");
+    $('.product-card').removeAttr("style");
 });
 $("#basc-link").click(function (event) {
     event.preventDefault();
