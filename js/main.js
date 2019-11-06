@@ -26,29 +26,51 @@
 
 $("#desl-link").click(function (event) {
     event.preventDefault();
-    $('.deslizantes').addClass('ativo').data("aos", "fade-right");
-    $('.basculantes').removeClass('ativo');
-    $('.cancelas').removeClass('ativo');
-    $('.portas').removeClass('ativo');
+    $('.basculantes').fadeOut();
+    $('.cancelas').fadeOut();
+    $('.portas').fadeOut();
+    $('.acessorios').fadeOut();
+    setTimeout(function(){
+        $('.deslizantes').fadeIn();
+    },300);
 });
 $("#basc-link").click(function (event) {
     event.preventDefault();
-    $('.deslizantes').removeClass('ativo');
-    $('.basculantes').addClass('ativo').data("aos", "fade-right");
-    $('.cancelas').removeClass('ativo');
-    $('.portas').removeClass('ativo');
+    $('.deslizantes').fadeOut();
+    $('.cancelas').fadeOut();
+    $('.portas').fadeOut();
+    $('.acessorios').fadeOut();
+    setTimeout(function(){
+        $('.basculantes').fadeIn() ;
+    },300);
 });
 $("#canc-link").click(function (event) {
     event.preventDefault();
-    $('.deslizantes').removeClass('ativo');
-    $('.basculantes').removeClass('ativo');
-    $('.cancelas').addClass('ativo');
-    $('.portas').removeClass('ativo');
+    $('.deslizantes').fadeOut();
+    $('.basculantes').fadeOut();
+    $('.portas').fadeOut();
+    $('.acessorios').fadeOut();
+    setTimeout(function(){
+        $('.cancelas').fadeIn();
+    },300);
 });
 $("#port-link").click(function (event) {
     event.preventDefault();
-    $('.deslizantes').removeClass('ativo');
-    $('.basculantes').removeClass('ativo');
-    $('.cancelas').removeClass('ativo');
-    $('.portas').addClass('ativo').data("aos", "fade-right");
+    $('.deslizantes').fadeOut();
+    $('.basculantes').fadeOut();
+    $('.cancelas').fadeOut();
+    $('.acessorios').fadeOut();
+    setTimeout(function(){
+        $('.portas').fadeIn();
+    },300);
+});
+$("#aces-link").click(function (event) {
+    event.preventDefault();
+    $('.deslizantes').fadeOut();
+    $('.basculantes').fadeOut();
+    $('.cancelas').fadeOut();
+    $('.portas').fadeOut();
+    setTimeout(function(){
+        $('.acessorios').fadeIn();
+    },300);
 });
