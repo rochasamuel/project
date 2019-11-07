@@ -407,13 +407,6 @@ h4{
   margin-bottom: 20px;
 }
 
-#contato .form .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
 
 #contato .form input,
 #contato .form textarea {
@@ -468,29 +461,15 @@ h4{
   top: 6%;
 } */
 
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #50d8af;
-  color: #fff;
-  padding: 6px 12px 9px 12px;
-  font-size: 16px;
-  border-radius: 2px;
-  right: 15px;
-  bottom: 15px;
-  transition: background 0.5s;
-}
 
-.back-to-top:focus {
-  background: #50d8af;
-  color: #fff;
-  outline: none;
-}
 
-.back-to-top:hover {
-  background: #0c2e8a;
-  color: #fff;
-}
+
+
+
+
+
+
+
 
 
 
