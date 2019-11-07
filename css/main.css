@@ -51,7 +51,7 @@ body {
 
 .menu{
     padding: 0;
-    margin: 7px 0;
+    margin: 3px 0;
 }
 
 .menu li{
@@ -359,12 +359,138 @@ h4{
 .ativo{
   display: block;
 }
+
+/* contato Section
+--------------------------------*/
+
+#contato {
+  padding: 30px 0;
+}
+
+#contato .contato-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contato .contato-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #ff8f4e;
+}
+
+#contato .contato-info address,
+#contato .contato-info p {
+  margin-bottom: 0;
+  color: #000;
+}
+
+#contato .contato-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+}
+
+#contato .contato-info a {
+  color: #000;
+}
+
+#contato .contato-info a:hover {
+  color: #ff8f4e;
+}
+
+#contato .contato-address,
+#contato .contato-phone,
+#contato .contato-email {
+  margin-bottom: 20px;
+}
+
+#contato .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contato .form input,
+#contato .form textarea {
+  padding: 10px 14px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+#contato .form button[type="submit"] {
+  background: #ff8f4e;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#contato .form button[type="submit"]:hover {
+  background: #fd833c;
+}
+
+
+
+#footer {
+  background: #eeeeee;
+  padding: 0 0 30px 0;
+  font-size: 14px;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
+
+#footer .credits a {
+  color: #0c2e8a;
+}
+
+
+
 /* IMG{
   max-width: -webkit-fill-available;
   position: absolute;
   top: 6%;
 } */
 
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #50d8af;
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+}
+
+.back-to-top:focus {
+  background: #50d8af;
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #0c2e8a;
+  color: #fff;
+}
 
 
 
@@ -381,7 +507,103 @@ h4{
 
 
 
+@media (min-width: 768px) {
+  #contato .contato-address,
+  #contato .contato-phone,
+  #contato .contato-email {
+    padding: 20px 0;
+  }
 
+  #contato .contato-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+}
+
+@media (min-width: 769px) {
+  #call-to-action .cta-btn-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+
+  #header {
+    padding: 20px 0;
+    height: 74px;
+  }
+
+  #header #logo h1 {
+    font-size: 34px;
+  }
+
+  #header #logo img {
+    max-height: 40px;
+  }
+
+  #nav-menu-container {
+    display: none;
+  }
+
+  #mobile-nav-toggle {
+    display: inline;
+  }
+
+  #about .about-img {
+    height: auto;
+  }
+
+  #about .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+
+  #services .box .box {
+    margin-bottom: 20px;
+  }
+
+  #services .box .icon {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  #services .box h4,
+  #services .box p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #testimonials .testimonial-item {
+    margin: 30px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  #contato #google-map {
+    margin-top: 20px;
+  }
+}
 
 
 
