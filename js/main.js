@@ -22,17 +22,15 @@
 // })(jQuery);
 
 
-
-
 $("#desl-link").click(function (event) {
     event.preventDefault();
     $('.basculantes').fadeOut();
     $('.cancelas').fadeOut();
     $('.portas').fadeOut();
     $('.acessorios').fadeOut();
-    setTimeout(function(){
+    setTimeout(function () {
         $('.deslizantes').fadeIn();
-    },300);
+    }, 300);
     $('.product-card').removeClass("wow bounceInUp");
     $('.product-card').removeAttr("data-wow-duration");
     $('.product-card').removeAttr("style");
@@ -43,9 +41,9 @@ $("#basc-link").click(function (event) {
     $('.cancelas').fadeOut();
     $('.portas').fadeOut();
     $('.acessorios').fadeOut();
-    setTimeout(function(){
-        $('.basculantes').fadeIn() ;
-    },300);
+    setTimeout(function () {
+        $('.basculantes').fadeIn();
+    }, 300);
 });
 $("#canc-link").click(function (event) {
     event.preventDefault();
@@ -53,9 +51,9 @@ $("#canc-link").click(function (event) {
     $('.basculantes').fadeOut();
     $('.portas').fadeOut();
     $('.acessorios').fadeOut();
-    setTimeout(function(){
+    setTimeout(function () {
         $('.cancelas').fadeIn();
-    },300);
+    }, 300);
 });
 $("#port-link").click(function (event) {
     event.preventDefault();
@@ -63,9 +61,9 @@ $("#port-link").click(function (event) {
     $('.basculantes').fadeOut();
     $('.cancelas').fadeOut();
     $('.acessorios').fadeOut();
-    setTimeout(function(){
+    setTimeout(function () {
         $('.portas').fadeIn();
-    },300);
+    }, 300);
 });
 $("#aces-link").click(function (event) {
     event.preventDefault();
@@ -73,21 +71,23 @@ $("#aces-link").click(function (event) {
     $('.basculantes').fadeOut();
     $('.cancelas').fadeOut();
     $('.portas').fadeOut();
-    setTimeout(function(){
+    setTimeout(function () {
         $('.acessorios').fadeIn();
-    },300);
+    }, 300);
 });
 
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
-    } else {
-      $('.back-to-top').fadeOut('slow');
+
+$('.menu a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    var id = $(this).attr('href'),
+        targetOffset = $(id).offset().top;
+    if (id == "#contato" || id == "#sobre") {
+        $('html, body').animate({
+            scrollTop: targetOffset - 60
+        }, 500);
+    }else{
+        $('html, body').animate({
+            scrollTop: targetOffset - 100
+        }, 500);
     }
-  });
-  $('.back-to-top').click(function () {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1500, 'easeInOutExpo');
-    return false;
-  });
+});
