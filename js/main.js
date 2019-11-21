@@ -21,7 +21,7 @@
 //     });
 // })(jQuery);
 
-
+//ABA DE PRODUTOS//
 $("#desl-link").click(function (event) {
     event.preventDefault();
     $('.basculantes').fadeOut();
@@ -76,18 +76,35 @@ $("#aces-link").click(function (event) {
     }, 300);
 });
 
-
-$('.menu a[href^="#"]').on('click', function (e) {
+//SCROLL ANCORA//
+$('.menu a[href^="#"],.main-buttons a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     var id = $(this).attr('href'),
         targetOffset = $(id).offset().top;
     if (id == "#contato" || id == "#sobre") {
         $('html, body').animate({
-            scrollTop: targetOffset - 60
+            scrollTop: targetOffset - 40
         }, 500);
     }else{
         $('html, body').animate({
-            scrollTop: targetOffset - 100
+            scrollTop: targetOffset - 80
         }, 500);
     }
 });
+
+
+//MENU DIMINUI COM SCROLL//
+$(window).on('scroll', function() {
+    var $header = $('#header'),
+        headerHeight = $header.outerHeight(),
+        windowTop = $(this).scrollTop();
+    
+    if (windowTop > (headerHeight + 220)) {
+        $header.addClass('small-nav');
+        $(".menu").addClass('small-menu');
+    } else {
+        $header.removeClass('small-nav');
+        $(".menu").removeClass('small-menu');
+    }
+});
+
