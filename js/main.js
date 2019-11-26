@@ -93,6 +93,7 @@ $(window).on('scroll', function() {
     }
 });
 
+//MENU ATIVA COM SCROLL
 $(window).on('scroll', function(){
     var wintop = $(this).scrollTop();
 
@@ -112,4 +113,22 @@ $(window).on('scroll', function(){
         $('.menu a[href^="#contato"]').addClass('active');
         $('.menu a[href^="#intro"], .menu a[href^="#produtos"], .menu a[href^="#sobre"]').removeClass('active');
     }
+})
+
+//BACK TO TOP APARECE COM SCROLL
+$(window).on('scroll', function(){
+    var wintop = $(this).scrollTop();
+
+    if(wintop >= $('#sobre').offset().top){
+        $('#back-to-top').fadeIn("slow");
+    }else{
+        $('#back-to-top').fadeOut("slow");
+    }
+})
+
+//VOLTA PRO TOPO AO CLIQUE
+$('#back-to-top').click(function(){
+    $('html, body').animate({
+        scrollTop: 0
+    }, 600);
 })
