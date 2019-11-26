@@ -24,10 +24,7 @@
 //ABA DE PRODUTOS//
 $("#desl-link").click(function (event) {
     event.preventDefault();
-    $('.basculantes').fadeOut();
-    $('.cancelas').fadeOut();
-    $('.portas').fadeOut();
-    $('.acessorios').fadeOut();
+    $('.basculantes, .acessorios, .portas, .cancelas').fadeOut();
     setTimeout(function () {
         $('.deslizantes').fadeIn();
     }, 300);
@@ -37,40 +34,28 @@ $("#desl-link").click(function (event) {
 });
 $("#basc-link").click(function (event) {
     event.preventDefault();
-    $('.deslizantes').fadeOut();
-    $('.cancelas').fadeOut();
-    $('.portas').fadeOut();
-    $('.acessorios').fadeOut();
+    $('.deslizantes, .acessorios, .portas, .cancelas').fadeOut();
     setTimeout(function () {
         $('.basculantes').fadeIn();
     }, 300);
 });
 $("#canc-link").click(function (event) {
     event.preventDefault();
-    $('.deslizantes').fadeOut();
-    $('.basculantes').fadeOut();
-    $('.portas').fadeOut();
-    $('.acessorios').fadeOut();
+    $('.deslizantes, .basculantes, .portas, .acessorios').fadeOut();
     setTimeout(function () {
         $('.cancelas').fadeIn();
     }, 300);
 });
 $("#port-link").click(function (event) {
     event.preventDefault();
-    $('.deslizantes').fadeOut();
-    $('.basculantes').fadeOut();
-    $('.cancelas').fadeOut();
-    $('.acessorios').fadeOut();
+    $('.deslizantes, .acessorios, .cancelas, .basculantes').fadeOut();
     setTimeout(function () {
         $('.portas').fadeIn();
     }, 300);
 });
 $("#aces-link").click(function (event) {
     event.preventDefault();
-    $('.deslizantes').fadeOut();
-    $('.basculantes').fadeOut();
-    $('.cancelas').fadeOut();
-    $('.portas').fadeOut();
+    $('.deslizantes, .basculantes, .cancelas, .portas').fadeOut();
     setTimeout(function () {
         $('.acessorios').fadeIn();
     }, 300);
@@ -108,3 +93,23 @@ $(window).on('scroll', function() {
     }
 });
 
+$(window).on('scroll', function(){
+    var wintop = $(this).scrollTop();
+
+    if(wintop >= $('#intro').offset().top){
+        $('.menu a[href^="#intro"]').addClass('active');
+        $('.menu a[href^="#sobre"], .menu a[href^="#produtos"], .menu a[href^="#contato"]').removeClass('active');
+    }
+    if(wintop >= $('#sobre').offset().top - 100){
+        $('.menu a[href^="#sobre"]').addClass('active');
+        $('.menu a[href^="#intro"], .menu a[href^="#produtos"], .menu a[href^="#contato"]').removeClass('active');
+    }
+    if(wintop >= $('#produtos').offset().top - 150){
+        $('.menu a[href^="#produtos"]').addClass('active');
+        $('.menu a[href^="#sobre"], .menu a[href^="#intro"], .menu a[href^="#contato"]').removeClass('active');
+    }
+    if(wintop >= ($('#contato').offset().top)-100){
+        $('.menu a[href^="#contato"]').addClass('active');
+        $('.menu a[href^="#intro"], .menu a[href^="#produtos"], .menu a[href^="#sobre"]').removeClass('active');
+    }
+})

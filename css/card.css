@@ -128,8 +128,9 @@
 	background:#fff;
 	color:#ff8f4e;
 	cursor:pointer;
-
 }
+
+
 .product-card.animate .view_details{
 	opacity:1;
 	width:152px;
