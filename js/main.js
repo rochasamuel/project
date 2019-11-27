@@ -68,30 +68,15 @@ $('.menu a[href^="#"],.main-buttons a[href^="#"]').on('click', function (e) {
         targetOffset = $(id).offset().top;
     if (id == "#contato" || id == "#sobre") {
         $('html, body').animate({
-            scrollTop: targetOffset - 40
+            scrollTop: targetOffset - 60
         }, 500);
     }else{
         $('html, body').animate({
-            scrollTop: targetOffset - 80
+            scrollTop: targetOffset - 90
         }, 500);
     }
 });
 
-
-//MENU DIMINUI COM SCROLL//
-$(window).on('scroll', function() {
-    var $header = $('#header'),
-        headerHeight = $header.outerHeight(),
-        windowTop = $(this).scrollTop();
-    
-    if (windowTop > (headerHeight + 220)) {
-        $header.addClass('small-nav');
-        $(".menu").addClass('small-menu');
-    } else {
-        $header.removeClass('small-nav');
-        $(".menu").removeClass('small-menu');
-    }
-});
 
 //MENU ATIVA COM SCROLL
 $(window).on('scroll', function(){
@@ -101,13 +86,13 @@ $(window).on('scroll', function(){
         $('.menu a[href^="#intro"]').addClass('active');
         $('.menu a[href^="#sobre"], .menu a[href^="#produtos"], .menu a[href^="#contato"]').removeClass('active');
     }
-    if(wintop >= $('#sobre').offset().top - 100){
+    if(wintop >= $('#sobre').offset().top - 120){
         $('.menu a[href^="#sobre"]').addClass('active');
         $('.menu a[href^="#intro"], .menu a[href^="#produtos"], .menu a[href^="#contato"]').removeClass('active');
     }
     if(wintop >= $('#produtos').offset().top - 150){
         $('.menu a[href^="#produtos"]').addClass('active');
-        $('.menu a[href^="#sobre"], .menu a[href^="#intro"], .menu a[href^="#contato"]').removeClass('active');
+        $('.menu a[href^="#intro"], .menu a[href^="#sobre"], .menu a[href^="#contato"]').removeClass('active');
     }
     if(wintop >= ($('#contato').offset().top)-100){
         $('.menu a[href^="#contato"]').addClass('active');
@@ -132,3 +117,4 @@ $('#back-to-top').click(function(){
         scrollTop: 0
     }, 600);
 })
+
