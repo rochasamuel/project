@@ -1,0 +1,21 @@
+Alimentação: 127 V / 220 V
+
+Motor: Trifásico
+
+Peso do portão: Z12 = 1500 kg / Z17 (SP) = 1200 kg
+
+Redução: 1:40
+
+Tempo de abertura / fechamento (3 m): Z12 = 5,5 s / Z17 = 4 s
+
+Quantidade de ciclos/hora: 100
+
+Frequência de saída: 200 Hz (máxima)
+
+Rotação do motor (RPM): 5800 (máxima)
+
+Fim de curso: Híbrido (analógico e digital)
+
+Engrenagem externa: Z12 / Z17 ambas em alumínio
+
+Coroa interna: Nylon com alma metálica

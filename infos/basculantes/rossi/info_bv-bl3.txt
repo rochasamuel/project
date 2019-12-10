@@ -1,0 +1,14 @@
+MODELO: BV BL3
+
+APLICAÇÃO: RESIDENCIAL
+
+EXTENSÃO DO FUSO: 1,5 e 2.0
+
+PESO MÁX (Kg): 350**
+
+VELOCIDADE (m/min): 4
+POTÊNCIA (W): 420
+
+DISPONÍVEL EM 127V / 220V, 50 / 60 Hz
+
+Perfíl e fuso reforçados até 2 metros

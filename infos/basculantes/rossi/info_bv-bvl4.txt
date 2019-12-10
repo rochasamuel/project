@@ -1,0 +1,14 @@
+MODELO: BV BL4
+
+APLICAÇÃO: RESIDENCIAL
+
+EXTENSÃO DO FUSO: 1,5 e 6,8
+
+PESO MÁX (Kg): 450**
+
+VELOCIDADE (m/min): 4
+POTÊNCIA (W): 500
+
+DISPONÍVEL EM 127V / 220V, 50 / 60
+
+Perfil e fuso reforçados até 2 metros

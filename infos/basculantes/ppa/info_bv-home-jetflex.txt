@@ -1,0 +1,31 @@
+Alimentação: 127 V / 220 V
+
+Motor: Trifásico
+
+Peso do portão: 350 kg
+
+Redução: 2:30
+
+Tempo de abertura / fechamento (trilho 1,15 m): 2,5 s
+
+Quantidade de ciclos/hora: 40
+
+Frequência de saída: 200 Hz (máxima)
+
+Rotação do motor (RPM): 5800 (máxima)
+
+Fim de curso: Híbrido (analógico e digital)
+
+Diâmetro do fuso: 1/2"
+
+Passo do fuso: 62 mm
+
+Nº de entradas do fuso: 5
+
+Coroa: Nylon
+
+Trilho: Alumínio
+
+Acionamento (m):1,15 a 2 m
+
+Sugestão de aplicação: Residências

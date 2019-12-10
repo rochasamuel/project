@@ -1,0 +1,31 @@
+Alimentação: 127 V / 220 V
+
+Motor: Monofásico
+
+Peso do portão: 300 kg
+
+Redução: 1:26
+
+Tempo de abertura / fechamento (trilho 1,15 m):13 s
+
+Quantidade de ciclos/hora: 30
+
+Frequência de saída: 60 Hz
+
+Rotação do motor (RPM):1740
+
+Capacitor: 127 V = 25 µF / 220 V = 12 µF
+
+Fim de curso: Analógico / Digital
+
+Diâmetro do fuso: 1/2"
+
+Passo do fuso: 62 mm
+
+Nº de entradas do fuso: 5
+
+Coroa: Nylon
+
+Trilho: Alumínio
+
+Acionamento (m): 1,15 a 2 m

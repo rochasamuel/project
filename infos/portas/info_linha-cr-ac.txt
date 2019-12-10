@@ -1,0 +1,7 @@
+KIT: Motor e testeira
+Voltagem: 220V
+Frequência: 60Hz
+Potência: 1/2 HP - 200W até 2 HP 200W
+Corrente: 2.0A até 6.5A
+RPM: 4.2 até 5.9
+Carga: 200kg a 1000kg

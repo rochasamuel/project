@@ -1,0 +1,25 @@
+Alimentação: 127 V / 220 V
+
+Motor: Monofásico
+
+Peso do portão: 400 kg
+
+Redução: 1:23
+
+Tempo de abertura / fechamento (3 m): Z14 = 13,5 s / Z18 (SP) = 10,5 s
+
+Quantidade de ciclos/hora: 30
+
+Frequência de saída: 60 Hz
+
+Rotação do motor (RPM): 1740
+
+Capacitor: 127 V = 25 µF / 220 V = 12 µF
+
+Fim de curso: Analógico / Digital
+
+Engrenagem externa: Z14 / Z18 em alumínio
+
+Coroa interna: Nylon com alma metálica
+
+Sugestão de aplicação: Residências

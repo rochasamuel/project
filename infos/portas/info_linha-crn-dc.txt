@@ -1,0 +1,7 @@
+KIT: Motor, testeira e NoBreak
+Voltagem: 220V
+Frequência: 60Hz
+Potência: 180W até 380X
+Corrente: 1.3A até 1.8A
+RPM: 4.0 até 5.2
+Carga: 200kg a 800kg
