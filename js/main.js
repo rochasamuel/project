@@ -124,3 +124,8 @@ function slider() {
         autoplay: true
     });
 }
+
+function _loadHide(){
+    $("body").removeClass("hidden");
+    $(".loading").addClass("checked");
+}
