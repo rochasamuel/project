@@ -125,7 +125,15 @@ function slider() {
     });
 }
 
+//ESCONDE O LOADING
 function _loadHide(){
     $("body").removeClass("hidden");
     $(".loading").addClass("checked");
 }
+
+//PINTA DE LARANJA O TITULO DSA ABA DE PRODUTOS ATIVADA
+$('.type-automatizador a').click(function(e){
+    e.preventDefault();
+    $('.type-automatizador a').removeClass('active');
+    $(this).toggleClass('active');
+})
